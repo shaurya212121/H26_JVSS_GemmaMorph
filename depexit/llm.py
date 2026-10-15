@@ -28,8 +28,8 @@ else:
 
 console = Console()
 
-DEFAULT_GROQ_MODEL = os.getenv("GEMMA_MODEL", "gemma2-9b-it")
-DEFAULT_OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma2:2b")
+DEFAULT_GROQ_MODEL = os.getenv("GEMMA_MODEL", "gemma2-9b-it")  # Groq hosted runner for Gemma 4 / Gemma series
+DEFAULT_OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma4:e2b")
 DEFAULT_OLLAMA_URL = os.getenv("OLLAMA_HOST", "http://localhost:11434").rstrip("/") + "/api/generate"
 
 

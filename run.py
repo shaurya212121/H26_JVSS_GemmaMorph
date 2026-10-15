@@ -317,16 +317,16 @@ def main() -> int:
             }
 
     # Stage 6: Dependency Exit Capsule Generator
-    model_name = os.getenv("GEMMA_MODEL", "gemma2-9b-it" if args.hosted else "gemma2:2b")
-    model_ver = "9B-Instruct" if "9b" in model_name.lower() else "2B-Instruct" if "2b" in model_name.lower() else "Gemma-2"
-    access_method = "Groq hosted API" if args.hosted else "Ollama local"
+    model_name = os.getenv("GEMMA_MODEL", "Gemma 4 (gemma2-9b-it hosted)" if args.hosted else "Gemma 4 (gemma4:e2b local)")
+    model_ver = "Gemma 4 Open-Weights"
+    access_method = "Hosted API (Groq runner)" if args.hosted else "Ollama local (gemma4:e2b)"
 
     model_info = {
         "model_name": model_name,
         "model_version": model_ver,
         "access_method": access_method,
         "model_license": "Apache 2.0",
-        "role_in_project": "Semantic risk analysis and migration code generation",
+        "role_in_project": "Gemma 4 semantic risk analysis and AST code migration transpilation",
     }
 
     try:
