@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (NEVER commit API keys)
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / build artifacts
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+htmlcov/
+
+# Rehearsal sandbox temp dirs
+_sandbox_*/

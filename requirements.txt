@@ -1,0 +1,6 @@
+groq>=1.7.0
+python-dotenv>=1.0.0
+rich>=15.0.0
+requests>=2.31.0
+packaging>=22.0
+platformdirs>=4.0.0
