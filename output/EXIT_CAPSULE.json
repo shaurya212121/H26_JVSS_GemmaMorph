@@ -1,0 +1,2432 @@
+{
+  "capsule_version": "1.0.0",
+  "generated_at": "2026-10-15 07:23:26 UTC",
+  "target_repo": "LinkWatch",
+  "model_info": {
+    "model_name": "gemma2-9b-it",
+    "model_version": "9B-Instruct",
+    "access_method": "Ollama local",
+    "model_license": "Apache 2.0",
+    "role_in_project": "Semantic risk analysis and migration code generation"
+  },
+  "summary": {
+    "total_dependencies": 15,
+    "high_risk": 0,
+    "medium_risk": 0,
+    "low_risk": 15,
+    "rehearsed": 0,
+    "certified": 0,
+    "refuted": 0
+  },
+  "dependencies": [
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "appdirs",
+        "version": "==1.4.4",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cache.py",
+          "line": 4,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cache.py",
+          "line": 10,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review appdirs deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering appdirs"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "chardet",
+        "version": "==5.2.0",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/encoding.py",
+          "line": 4,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/encoding.py",
+          "line": 15,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review chardet deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering chardet"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "click",
+        "version": ">=7",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 1,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 27,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 28,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 34,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 60,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 62,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 51,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 53,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 68,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 69,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "tests/test_report.py",
+          "line": 1,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "tests/test_report.py",
+          "line": 20,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review click deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering click"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "idna",
+        "version": "==2.7",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review idna deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering idna"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "jinja2",
+        "version": "==2.11.3",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/report.py",
+          "line": 3,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/report.py",
+          "line": 9,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/report.py",
+          "line": 10,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/report.py",
+          "line": 11,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review jinja2 deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering jinja2"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "nose",
+        "version": "==1.3.7",
+        "source_file": "requirements-dev.txt"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review nose deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering nose"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "observed_risks",
+        "version": "unknown",
+        "source_file": "requirements.txt"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [],
+      "proposed_replacement": null,
+      "migration_steps": [],
+      "suggested_tests": [],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "pydantic",
+        "version": ">=2",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 4,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 7,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 14,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 14,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 20,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 20,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 27,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review pydantic deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering pydantic"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "pytest",
+        "version": "*",
+        "source_file": "requirements-dev.txt"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "tests/conftest.py",
+          "line": 6,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "tests/conftest.py",
+          "line": 60,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "tests/conftest.py",
+          "line": 70,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review pytest deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering pytest"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "python-dateutil",
+        "version": "*",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/dates.py",
+          "line": 1,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review python-dateutil deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering python-dateutil"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "requests",
+        "version": "==2.31.0",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 5,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 6,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 13,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 35,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 35,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 38,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/checker.py",
+          "line": 38,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/encoding.py",
+          "line": 5,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/encoding.py",
+          "line": 11,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/http_patch.py",
+          "line": 1,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/http_patch.py",
+          "line": 5,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/http_patch.py",
+          "line": 5,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/http_patch.py",
+          "line": 14,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/http_patch.py",
+          "line": 14,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review requests deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering requests"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "rich",
+        "version": "*",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 2,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 3,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 4,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 9,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 13,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/cli.py",
+          "line": 40,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review rich deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering rich"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "setuptools",
+        "version": "==75.8.0",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/resources.py",
+          "line": 1,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/resources.py",
+          "line": 7,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review setuptools deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering setuptools"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "six",
+        "version": "*",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review six deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering six"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    },
+    {
+      "dependency": {
+        "claim_type": "[VERIFIED]",
+        "name": "toml",
+        "version": "==0.10.2",
+        "source_file": "pyproject.toml"
+      },
+      "risk_assessment": {
+        "risk_level": "LOW",
+        "risk_score": 15,
+        "metadata_indicators": [],
+        "observed_indicators": []
+      },
+      "usages": [
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 3,
+          "api": "import",
+          "code": ""
+        },
+        {
+          "claim_type": "[VERIFIED]",
+          "file": "linkwatch/config.py",
+          "line": 37,
+          "api": "import",
+          "code": ""
+        }
+      ],
+      "proposed_replacement": null,
+      "migration_steps": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Review toml deprecation notices and compatibility with Python 3.12"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Manually inspect usages in codebase"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Select and test a modern alternative"
+        },
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "step": "Update requirements.txt and verify test suite"
+        }
+      ],
+      "suggested_tests": [
+        {
+          "claim_type": "[AI-PROPOSED]",
+          "test": "Run integration test suite covering toml"
+        }
+      ],
+      "rehearsal": null,
+      "compatibility_gaps": [],
+      "open_concerns": [],
+      "capsule_status": "[VERIFIED] Retained"
+    }
+  ],
+  "rehearsal_suite": {
+    "baseline": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "test_details": [],
+      "passed_tests": [],
+      "failed_tests": [],
+      "warnings": []
+    },
+    "combined": {
+      "applied_proposals": [],
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "newly_failing": [],
+      "status": "SKIPPED"
+    }
+  },
+  "raw_discovery": {
+    "declared_deps": [
+      {
+        "name": "pytest",
+        "pinned_version": "*",
+        "source_file": "requirements-dev.txt"
+      },
+      {
+        "name": "nose",
+        "pinned_version": "==1.3.7",
+        "source_file": "requirements-dev.txt"
+      },
+      {
+        "name": "toml",
+        "pinned_version": "==0.10.2",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "appdirs",
+        "pinned_version": "==1.4.4",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "requests",
+        "pinned_version": "==2.31.0",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "jinja2",
+        "pinned_version": "==2.11.3",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "pydantic",
+        "pinned_version": "==1.10.13",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "click",
+        "pinned_version": ">=7",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "six",
+        "pinned_version": "*",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "chardet",
+        "pinned_version": "==5.2.0",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "setuptools",
+        "pinned_version": "==75.8.0",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "idna",
+        "pinned_version": "==2.7",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "python-dateutil",
+        "pinned_version": "*",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "rich",
+        "pinned_version": "*",
+        "source_file": "requirements.txt"
+      },
+      {
+        "name": "toml",
+        "pinned_version": "==0.10.2",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "appdirs",
+        "pinned_version": "==1.4.4",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "requests",
+        "pinned_version": "==2.31.0",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "jinja2",
+        "pinned_version": "==2.11.3",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "pydantic",
+        "pinned_version": ">=2",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "click",
+        "pinned_version": ">=7",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "six",
+        "pinned_version": "*",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "chardet",
+        "pinned_version": "==5.2.0",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "setuptools",
+        "pinned_version": "==75.8.0",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "idna",
+        "pinned_version": "==2.7",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "python-dateutil",
+        "pinned_version": "*",
+        "source_file": "pyproject.toml"
+      },
+      {
+        "name": "rich",
+        "pinned_version": "*",
+        "source_file": "pyproject.toml"
+      }
+    ],
+    "conflicts": [
+      {
+        "name": "pydantic",
+        "version_a": "==1.10.13",
+        "source_a": "requirements.txt",
+        "version_b": ">=2",
+        "source_b": "pyproject.toml"
+      }
+    ],
+    "undeclared_imports": [
+      {
+        "name": "certifi",
+        "imported_in": [
+          "linkwatch/checker.py"
+        ]
+      }
+    ]
+  },
+  "raw_risks": {
+    "metadata_risks": [
+      {
+        "package": "appdirs",
+        "pinned_version": "==1.4.4",
+        "latest_version": "1.4.4",
+        "last_release_date": "2020-05-11T07:59:49.499913Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": "",
+        "homepage_url": "http://github.com/ActiveState/appdirs",
+        "flags": [
+          "Stale package: last release was 6.4 years ago (2020-05-11)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "chardet",
+        "pinned_version": "==5.2.0",
+        "latest_version": "7.6.0",
+        "last_release_date": "2026-08-14T20:36:07.451224Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.10",
+        "homepage_url": "https://github.com/chardet/chardet",
+        "flags": [
+          "Major version lag: pinned ==5.2.0 is 2 major versions behind latest (7.6.0)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "click",
+        "pinned_version": ">=7",
+        "latest_version": "8.5.0",
+        "last_release_date": "2026-08-26T13:33:12.928043Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.10",
+        "homepage_url": "https://github.com/pallets/click/",
+        "flags": [
+          "Major version update available: pinned >=7 vs latest 8.5.0 (v7 -> v8)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "idna",
+        "pinned_version": "==2.7",
+        "latest_version": "3.20",
+        "last_release_date": "2026-09-17T14:11:03.168153Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.9",
+        "homepage_url": "https://github.com/kjd/idna",
+        "flags": [
+          "Major version update available: pinned ==2.7 vs latest 3.20 (v2 -> v3)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "jinja2",
+        "pinned_version": "==2.11.3",
+        "latest_version": "3.1.6",
+        "last_release_date": "2025-03-05T20:05:00.369721Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.7",
+        "homepage_url": "https://github.com/pallets/jinja/",
+        "flags": [
+          "Major version update available: pinned ==2.11.3 vs latest 3.1.6 (v2 -> v3)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "nose",
+        "pinned_version": "==1.3.7",
+        "latest_version": "1.3.7",
+        "last_release_date": "2015-06-02T09:12:36.801799Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": "",
+        "homepage_url": "http://readthedocs.org/docs/nose/",
+        "flags": [
+          "Stale package: last release was 11.4 years ago (2015-06-02)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "pydantic",
+        "pinned_version": "==1.10.13",
+        "latest_version": "2.14.1",
+        "last_release_date": "2026-10-11T18:37:53.437059Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.10",
+        "homepage_url": "https://github.com/pydantic/pydantic",
+        "flags": [
+          "Major version update available: pinned ==1.10.13 vs latest 2.14.1 (v1 -> v2)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "pytest",
+        "pinned_version": "*",
+        "latest_version": "9.1.1",
+        "last_release_date": "2026-06-19T10:58:31.347074Z",
+        "development_status": "6 - Mature",
+        "python_requires": ">=3.10",
+        "homepage_url": "https://docs.pytest.org/en/latest/",
+        "flags": [],
+        "risk_score": "LOW",
+        "from_cache": false
+      },
+      {
+        "package": "python-dateutil",
+        "pinned_version": "*",
+        "latest_version": "2.9.0.post0",
+        "last_release_date": "2024-03-01T18:36:18.570437Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+        "homepage_url": "https://github.com/dateutil/dateutil",
+        "flags": [
+          "Stale package: last release was 2.6 years ago (2024-03-01)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "requests",
+        "pinned_version": "==2.31.0",
+        "latest_version": "2.34.2",
+        "last_release_date": "2026-05-14T19:25:26.443000Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.10",
+        "homepage_url": "https://github.com/psf/requests",
+        "flags": [],
+        "risk_score": "LOW",
+        "from_cache": false
+      },
+      {
+        "package": "rich",
+        "pinned_version": "*",
+        "latest_version": "15.0.0",
+        "last_release_date": "2026-04-12T08:24:02.830783Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.9.0",
+        "homepage_url": "https://github.com/Textualize/rich",
+        "flags": [],
+        "risk_score": "LOW",
+        "from_cache": false
+      },
+      {
+        "package": "setuptools",
+        "pinned_version": "==75.8.0",
+        "latest_version": "84.0.0",
+        "last_release_date": "2026-08-08T18:27:56.719708Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=3.10",
+        "homepage_url": "https://github.com/pypa/setuptools",
+        "flags": [
+          "Major version lag: pinned ==75.8.0 is 9 major versions behind latest (84.0.0)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      },
+      {
+        "package": "six",
+        "pinned_version": "*",
+        "latest_version": "1.17.0",
+        "last_release_date": "2024-12-04T17:35:26.475808Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+        "homepage_url": "https://github.com/benjaminp/six",
+        "flags": [],
+        "risk_score": "LOW",
+        "from_cache": false
+      },
+      {
+        "package": "toml",
+        "pinned_version": "==0.10.2",
+        "latest_version": "0.10.2",
+        "last_release_date": "2020-11-01T01:40:20.672915Z",
+        "development_status": "5 - Production/Stable",
+        "python_requires": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+        "homepage_url": "https://github.com/uiri/toml",
+        "flags": [
+          "Stale package: last release was 6.0 years ago (2020-11-01)"
+        ],
+        "risk_score": "MEDIUM",
+        "from_cache": false
+      }
+    ],
+    "observed_risks": {
+      "test_summary": {
+        "total": 10,
+        "passed": 9,
+        "failed": 1,
+        "errors": 0,
+        "warnings": 1,
+        "duration_seconds": 9.91,
+        "exit_code": 1
+      },
+      "attributed_warnings": [
+        {
+          "package": "setuptools",
+          "location": "linkwatch\\resources.py:1",
+          "warning": "C:\\Users\\Shaurya\\OneDrive\\Desktop\\hactober\\LinkWatch\\linkwatch\\resources.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html im..."
+        }
+      ],
+      "attributed_failures": [
+        {
+          "package": "jinja2",
+          "test": "collection/setup",
+          "error": "E   ImportError: cannot import name 'soft_unicode' from 'markupsafe' (C:\\Users\\Shaurya\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\markupsafe\\__init__.py)"
+        }
+      ],
+      "raw_output": "============================= test session starts =============================\nplatform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0 -- C:\\Users\\Shaurya\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\ncachedir: .pytest_cache\nrootdir: C:\\Users\\Shaurya\\OneDrive\\Desktop\\hactober\\LinkWatch\nconfigfile: pyproject.toml\nplugins: anyio-4.14.2\ncollecting ... collected 10 items\n\ntests/test_cache.py::test_cache_round_trip PASSED                        [ 10%]\ntests/test_checker.py::test_ok_is_up PASSED                              [ 20%]\ntests/test_checker.py::test_missing_is_down PASSED                       [ 30%]\ntests/test_checker.py::test_redirect_is_up PASSED                        [ 40%]\ntests/test_checker.py::test_slow_is_up PASSED                            [ 50%]\ntests/test_checker.py::test_closed_port_is_down PASSED                   [ 60%]\ntests/test_checker.py::test_latin1_title PASSED                          [ 70%]\ntests/test_checker.py::test_user_agent PASSED                            [ 80%]\ntests/test_config.py::test_sites_file_loads PASSED                       [ 90%]\ntests/test_report.py::test_report_renders_all_sites FAILED               [100%]\n\n================================== FAILURES ===================================\n________________________ test_report_renders_all_sites ________________________\ntests\\test_report.py:20: in test_report_renders_all_sites\n    result = CliRunner().invoke(cli, [\"report\", \"-o\", str(output)], catch_exceptions=False)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\click\\testing.py:687: in invoke\n    return_value = cli.main(args=args or (), prog_name=prog_name, **extra)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\click\\core.py:1490: in main\n    rv = self.invoke(ctx)\n         ^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\click\\core.py:1970: in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\click\\core.py:1353: in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\click\\core.py:907: in invoke\n    return callback(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nlinkwatch\\cli.py:56: in report\n    from .report import render_report\nlinkwatch\\report.py:3: in <module>\n    from jinja2 import Environment, FileSystemLoader, select_autoescape\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\__init__.py:12: in <module>\n    from .environment import Environment\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\environment.py:25: in <module>\n    from .defaults import BLOCK_END_STRING\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\defaults.py:3: in <module>\n    from .filters import FILTERS as DEFAULT_FILTERS  # noqa: F401\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\filters.py:13: in <module>\n    from markupsafe import soft_unicode\nE   ImportError: cannot import name 'soft_unicode' from 'markupsafe' (C:\\Users\\Shaurya\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\markupsafe\\__init__.py)\n============================== warnings summary ===============================\nlinkwatch\\resources.py:1\n  C:\\Users\\Shaurya\\OneDrive\\Desktop\\hactober\\LinkWatch\\linkwatch\\resources.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n    import pkg_resources\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nFAILED tests/test_report.py::test_report_renders_all_sites - ImportError: can...\n=================== 1 failed, 9 passed, 1 warning in 8.84s ====================\n\n"
+    }
+  },
+  "raw_usages": {
+    "appdirs": [
+      {
+        "file_path": "linkwatch/cache.py",
+        "line_number": 4,
+        "usage_type": "import",
+        "import_statement": "from appdirs import user_cache_dir",
+        "api_names": [
+          "user_cache_dir"
+        ],
+        "code_line": "from appdirs import user_cache_dir",
+        "context_snippet": "      1 | import json\n      2 | import os\n      3 | \n->    4 | from appdirs import user_cache_dir\n      5 | \n      6 | RESULTS_FILE = \"results.json\"\n      7 | "
+      },
+      {
+        "file_path": "linkwatch/cache.py",
+        "line_number": 10,
+        "usage_type": "call",
+        "import_statement": "from appdirs import user_cache_dir",
+        "api_names": [
+          "user_cache_dir"
+        ],
+        "code_line": "    path = os.environ.get(\"LINKWATCH_CACHE_DIR\") or user_cache_dir(\"linkwatch\")",
+        "context_snippet": "      7 | \n      8 | \n      9 | def cache_dir():\n->   10 |     path = os.environ.get(\"LINKWATCH_CACHE_DIR\") or user_cache_dir(\"linkwatch\")\n     11 |     os.makedirs(path, exist_ok=True)\n     12 |     return path\n     13 | "
+      }
+    ],
+    "chardet": [
+      {
+        "file_path": "linkwatch/encoding.py",
+        "line_number": 4,
+        "usage_type": "import",
+        "import_statement": "import chardet",
+        "api_names": [
+          "chardet"
+        ],
+        "code_line": "import chardet",
+        "context_snippet": "      1 | import html\n      2 | import re\n      3 | \n->    4 | import chardet\n      5 | from requests.utils import _parse_content_type_header\n      6 | \n      7 | TITLE_RE = re.compile(r\"<title[^>]*>(.*?)</title>\", re.IGNORECASE | re.DOTALL)"
+      },
+      {
+        "file_path": "linkwatch/encoding.py",
+        "line_number": 15,
+        "usage_type": "attribute_call",
+        "import_statement": "import chardet",
+        "api_names": [
+          "detect"
+        ],
+        "code_line": "    guess = chardet.detect(resp.content)",
+        "context_snippet": "     12 |     charset = params.get(\"charset\")\n     13 |     if charset and charset is not True:\n     14 |         return charset\n->   15 |     guess = chardet.detect(resp.content)\n     16 |     return guess[\"encoding\"] or \"utf-8\"\n     17 | \n     18 | "
+      }
+    ],
+    "click": [
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 1,
+        "usage_type": "import",
+        "import_statement": "import click",
+        "api_names": [
+          "click"
+        ],
+        "code_line": "import click",
+        "context_snippet": "->    1 | import click\n      2 | from rich.console import Console\n      3 | from rich.live import Live\n      4 | from rich.table import Table"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 27,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "group"
+        ],
+        "code_line": "@click.group()",
+        "context_snippet": "     24 |     return table\n     25 | \n     26 | \n->   27 | @click.group()\n     28 | @click.version_option(__version__, prog_name=\"linkwatch\")\n     29 | def cli():\n     30 |     \"\"\"Check your sites and build a small status page.\"\"\""
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 28,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "version_option"
+        ],
+        "code_line": "@click.version_option(__version__, prog_name=\"linkwatch\")",
+        "context_snippet": "     25 | \n     26 | \n     27 | @click.group()\n->   28 | @click.version_option(__version__, prog_name=\"linkwatch\")\n     29 | def cli():\n     30 |     \"\"\"Check your sites and build a small status page.\"\"\"\n     31 | "
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 34,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "option"
+        ],
+        "code_line": "@click.option(\"--config\", \"config_path\", default=\"sites.toml\", show_default=True,",
+        "context_snippet": "     31 | \n     32 | \n     33 | @cli.command()\n->   34 | @click.option(\"--config\", \"config_path\", default=\"sites.toml\", show_default=True,\n     35 |               help=\"Path to the sites file.\")\n     36 | def check(config_path):\n     37 |     \"\"\"Check all sites and save the results.\"\"\""
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 60,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "ClickException"
+        ],
+        "code_line": "        raise click.ClickException(\"No cached results, run 'linkwatch check' first.\")",
+        "context_snippet": "     57 | \n     58 |     results = cache.load_results()\n     59 |     if not results:\n->   60 |         raise click.ClickException(\"No cached results, run 'linkwatch check' first.\")\n     61 |     path = render_report(results, output=output, title=title)\n     62 |     click.echo(\"Wrote %s\" % path)\n     63 | "
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 62,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "echo"
+        ],
+        "code_line": "    click.echo(\"Wrote %s\" % path)",
+        "context_snippet": "     59 |     if not results:\n     60 |         raise click.ClickException(\"No cached results, run 'linkwatch check' first.\")\n     61 |     path = render_report(results, output=output, title=title)\n->   62 |     click.echo(\"Wrote %s\" % path)\n     63 | \n     64 | \n     65 | @cli.command()"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 51,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "option"
+        ],
+        "code_line": "@click.option(\"--output\", \"-o\", default=\"status.html\", show_default=True,",
+        "context_snippet": "     48 | \n     49 | \n     50 | @cli.command()\n->   51 | @click.option(\"--output\", \"-o\", default=\"status.html\", show_default=True,\n     52 |               help=\"Where to write the HTML page.\")\n     53 | @click.option(\"--title\", default=\"linkwatch\", show_default=True)\n     54 | def report(output, title):"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 53,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "option"
+        ],
+        "code_line": "@click.option(\"--title\", default=\"linkwatch\", show_default=True)",
+        "context_snippet": "     50 | @cli.command()\n     51 | @click.option(\"--output\", \"-o\", default=\"status.html\", show_default=True,\n     52 |               help=\"Where to write the HTML page.\")\n->   53 | @click.option(\"--title\", default=\"linkwatch\", show_default=True)\n     54 | def report(output, title):\n     55 |     \"\"\"Render the cached results to an HTML page.\"\"\"\n     56 |     from .report import render_report"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 68,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "echo"
+        ],
+        "code_line": "    click.echo(\"Templates: %s\" % resources.template_dir())",
+        "context_snippet": "     65 | @cli.command()\n     66 | def info():\n     67 |     \"\"\"Show where linkwatch keeps its files.\"\"\"\n->   68 |     click.echo(\"Templates: %s\" % resources.template_dir())\n     69 |     click.echo(\"Cache:     %s\" % cache.cache_file())\n     70 | \n     71 | "
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 69,
+        "usage_type": "attribute_call",
+        "import_statement": "import click",
+        "api_names": [
+          "echo"
+        ],
+        "code_line": "    click.echo(\"Cache:     %s\" % cache.cache_file())",
+        "context_snippet": "     66 | def info():\n     67 |     \"\"\"Show where linkwatch keeps its files.\"\"\"\n     68 |     click.echo(\"Templates: %s\" % resources.template_dir())\n->   69 |     click.echo(\"Cache:     %s\" % cache.cache_file())\n     70 | \n     71 | \n     72 | if __name__ == \"__main__\":"
+      },
+      {
+        "file_path": "tests/test_report.py",
+        "line_number": 1,
+        "usage_type": "import",
+        "import_statement": "from click.testing import CliRunner",
+        "api_names": [
+          "CliRunner"
+        ],
+        "code_line": "from click.testing import CliRunner",
+        "context_snippet": "->    1 | from click.testing import CliRunner\n      2 | \n      3 | from linkwatch import cache\n      4 | from linkwatch.cli import cli"
+      },
+      {
+        "file_path": "tests/test_report.py",
+        "line_number": 20,
+        "usage_type": "call",
+        "import_statement": "from click.testing import CliRunner",
+        "api_names": [
+          "CliRunner"
+        ],
+        "code_line": "    result = CliRunner().invoke(cli, [\"report\", \"-o\", str(output)], catch_exceptions=False)",
+        "context_snippet": "     17 |     monkeypatch.setenv(\"LINKWATCH_CACHE_DIR\", str(tmp_path))\n     18 |     cache.save_results(RESULTS)\n     19 |     output = tmp_path / \"status.html\"\n->   20 |     result = CliRunner().invoke(cli, [\"report\", \"-o\", str(output)], catch_exceptions=False)\n     21 |     assert result.exit_code == 0\n     22 |     page = output.read_text(encoding=\"utf-8\")\n     23 |     for r in RESULTS:"
+      }
+    ],
+    "idna": [],
+    "jinja2": [
+      {
+        "file_path": "linkwatch/report.py",
+        "line_number": 3,
+        "usage_type": "import",
+        "import_statement": "from jinja2 import Environment, FileSystemLoader, select_autoescape",
+        "api_names": [
+          "Environment",
+          "FileSystemLoader",
+          "select_autoescape"
+        ],
+        "code_line": "from jinja2 import Environment, FileSystemLoader, select_autoescape",
+        "context_snippet": "      1 | from datetime import datetime\n      2 | \n->    3 | from jinja2 import Environment, FileSystemLoader, select_autoescape\n      4 | \n      5 | from .resources import TEMPLATE_NAME, template_dir\n      6 | "
+      },
+      {
+        "file_path": "linkwatch/report.py",
+        "line_number": 9,
+        "usage_type": "call",
+        "import_statement": "from jinja2 import Environment, FileSystemLoader, select_autoescape",
+        "api_names": [
+          "Environment"
+        ],
+        "code_line": "    return Environment(",
+        "context_snippet": "      6 | \n      7 | \n      8 | def make_env():\n->    9 |     return Environment(\n     10 |         loader=FileSystemLoader(template_dir()),\n     11 |         autoescape=select_autoescape([\"html\", \"j2\"]),\n     12 |     )"
+      },
+      {
+        "file_path": "linkwatch/report.py",
+        "line_number": 10,
+        "usage_type": "call",
+        "import_statement": "from jinja2 import Environment, FileSystemLoader, select_autoescape",
+        "api_names": [
+          "FileSystemLoader"
+        ],
+        "code_line": "        loader=FileSystemLoader(template_dir()),",
+        "context_snippet": "      7 | \n      8 | def make_env():\n      9 |     return Environment(\n->   10 |         loader=FileSystemLoader(template_dir()),\n     11 |         autoescape=select_autoescape([\"html\", \"j2\"]),\n     12 |     )\n     13 | "
+      },
+      {
+        "file_path": "linkwatch/report.py",
+        "line_number": 11,
+        "usage_type": "call",
+        "import_statement": "from jinja2 import Environment, FileSystemLoader, select_autoescape",
+        "api_names": [
+          "select_autoescape"
+        ],
+        "code_line": "        autoescape=select_autoescape([\"html\", \"j2\"]),",
+        "context_snippet": "      8 | def make_env():\n      9 |     return Environment(\n     10 |         loader=FileSystemLoader(template_dir()),\n->   11 |         autoescape=select_autoescape([\"html\", \"j2\"]),\n     12 |     )\n     13 | \n     14 | "
+      }
+    ],
+    "nose": [],
+    "pydantic": [
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 4,
+        "usage_type": "import",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "BaseModel",
+          "validator"
+        ],
+        "code_line": "from pydantic import BaseModel, validator",
+        "context_snippet": "      1 | from typing import List\n      2 | \n      3 | import toml\n->    4 | from pydantic import BaseModel, validator\n      5 | \n      6 | \n      7 | class Site(BaseModel):"
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 7,
+        "usage_type": "base_class",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "BaseModel"
+        ],
+        "code_line": "class Site(BaseModel):",
+        "context_snippet": "      4 | from pydantic import BaseModel, validator\n      5 | \n      6 | \n->    7 | class Site(BaseModel):\n      8 |     name: str\n      9 |     url: str\n     10 | "
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 14,
+        "usage_type": "decorator",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "validator"
+        ],
+        "code_line": "    @validator(\"name\")",
+        "context_snippet": "     11 |     class Config:\n     12 |         anystr_strip_whitespace = True\n     13 | \n->   14 |     @validator(\"name\")\n     15 |     def name_not_empty(cls, value):\n     16 |         if not value:\n     17 |             raise ValueError(\"site name can not be empty\")"
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 14,
+        "usage_type": "call",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "validator"
+        ],
+        "code_line": "    @validator(\"name\")",
+        "context_snippet": "     11 |     class Config:\n     12 |         anystr_strip_whitespace = True\n     13 | \n->   14 |     @validator(\"name\")\n     15 |     def name_not_empty(cls, value):\n     16 |         if not value:\n     17 |             raise ValueError(\"site name can not be empty\")"
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 20,
+        "usage_type": "decorator",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "validator"
+        ],
+        "code_line": "    @validator(\"url\")",
+        "context_snippet": "     17 |             raise ValueError(\"site name can not be empty\")\n     18 |         return value\n     19 | \n->   20 |     @validator(\"url\")\n     21 |     def url_has_scheme(cls, value):\n     22 |         if not value.startswith((\"http://\", \"https://\")):\n     23 |             raise ValueError(\"url must start with http:// or https://\")"
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 20,
+        "usage_type": "call",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "validator"
+        ],
+        "code_line": "    @validator(\"url\")",
+        "context_snippet": "     17 |             raise ValueError(\"site name can not be empty\")\n     18 |         return value\n     19 | \n->   20 |     @validator(\"url\")\n     21 |     def url_has_scheme(cls, value):\n     22 |         if not value.startswith((\"http://\", \"https://\")):\n     23 |             raise ValueError(\"url must start with http:// or https://\")"
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 27,
+        "usage_type": "base_class",
+        "import_statement": "from pydantic import BaseModel, validator",
+        "api_names": [
+          "BaseModel"
+        ],
+        "code_line": "class Settings(BaseModel):",
+        "context_snippet": "     24 |         return value\n     25 | \n     26 | \n->   27 | class Settings(BaseModel):\n     28 |     title: str = \"linkwatch\"\n     29 |     output: str = \"status.html\"\n     30 |     sites: List[Site] = []"
+      }
+    ],
+    "pytest": [
+      {
+        "file_path": "tests/conftest.py",
+        "line_number": 6,
+        "usage_type": "import",
+        "import_statement": "import pytest",
+        "api_names": [
+          "pytest"
+        ],
+        "code_line": "import pytest",
+        "context_snippet": "      3 | import time\n      4 | from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer\n      5 | \n->    6 | import pytest\n      7 | \n      8 | import linkwatch.cli  # noqa: F401\n      9 | "
+      },
+      {
+        "file_path": "tests/conftest.py",
+        "line_number": 60,
+        "usage_type": "attribute_call",
+        "import_statement": "import pytest",
+        "api_names": [
+          "fixture"
+        ],
+        "code_line": "@pytest.fixture(scope=\"session\")",
+        "context_snippet": "     57 |             self.send_body(404, b\"not found\", \"text/plain\")\n     58 | \n     59 | \n->   60 | @pytest.fixture(scope=\"session\")\n     61 | def server():\n     62 |     httpd = ThreadingHTTPServer((\"127.0.0.1\", 0), Handler)\n     63 |     thread = threading.Thread(target=httpd.serve_forever, daemon=True)"
+      },
+      {
+        "file_path": "tests/conftest.py",
+        "line_number": 70,
+        "usage_type": "attribute_call",
+        "import_statement": "import pytest",
+        "api_names": [
+          "fixture"
+        ],
+        "code_line": "@pytest.fixture",
+        "context_snippet": "     67 |     httpd.server_close()\n     68 | \n     69 | \n->   70 | @pytest.fixture\n     71 | def closed_port():\n     72 |     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n     73 |     sock.bind((\"127.0.0.1\", 0))"
+      }
+    ],
+    "python-dateutil": [
+      {
+        "file_path": "linkwatch/dates.py",
+        "line_number": 1,
+        "usage_type": "import",
+        "import_statement": "from dateutil import parser",
+        "api_names": [
+          "parser"
+        ],
+        "code_line": "from dateutil import parser",
+        "context_snippet": "->    1 | from dateutil import parser\n      2 | \n      3 | \n      4 | def parse_last_modified(value):"
+      }
+    ],
+    "requests": [
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 5,
+        "usage_type": "import",
+        "import_statement": "import requests",
+        "api_names": [
+          "requests"
+        ],
+        "code_line": "import requests",
+        "context_snippet": "      2 | from datetime import datetime, timezone\n      3 | \n      4 | import certifi\n->    5 | import requests\n      6 | from requests import Session as S\n      7 | \n      8 | from .dates import parse_last_modified"
+      },
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 6,
+        "usage_type": "import",
+        "import_statement": "from requests import Session as S",
+        "api_names": [
+          "Session"
+        ],
+        "code_line": "from requests import Session as S",
+        "context_snippet": "      3 | \n      4 | import certifi\n      5 | import requests\n->    6 | from requests import Session as S\n      7 | \n      8 | from .dates import parse_last_modified\n      9 | from .encoding import page_title"
+      },
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 13,
+        "usage_type": "call",
+        "import_statement": "from requests import Session as S",
+        "api_names": [
+          "Session"
+        ],
+        "code_line": "    session = S()",
+        "context_snippet": "     10 | \n     11 | \n     12 | def fetch(url):\n->   13 |     session = S()\n     14 |     try:\n     15 |         return session.get(url, verify=certifi.where())\n     16 |     finally:"
+      },
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 35,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "ConnectionError"
+        ],
+        "code_line": "    except requests.exceptions.ConnectionError:",
+        "context_snippet": "     32 |     started = time.monotonic()\n     33 |     try:\n     34 |         resp = fetch(site.url)\n->   35 |     except requests.exceptions.ConnectionError:\n     36 |         result[\"reason\"] = \"connection error\"\n     37 |         return result\n     38 |     except requests.exceptions.Timeout:"
+      },
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 35,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "exceptions"
+        ],
+        "code_line": "    except requests.exceptions.ConnectionError:",
+        "context_snippet": "     32 |     started = time.monotonic()\n     33 |     try:\n     34 |         resp = fetch(site.url)\n->   35 |     except requests.exceptions.ConnectionError:\n     36 |         result[\"reason\"] = \"connection error\"\n     37 |         return result\n     38 |     except requests.exceptions.Timeout:"
+      },
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 38,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "Timeout"
+        ],
+        "code_line": "    except requests.exceptions.Timeout:",
+        "context_snippet": "     35 |     except requests.exceptions.ConnectionError:\n     36 |         result[\"reason\"] = \"connection error\"\n     37 |         return result\n->   38 |     except requests.exceptions.Timeout:\n     39 |         result[\"reason\"] = \"timed out\"\n     40 |         return result\n     41 |     result[\"elapsed_ms\"] = int((time.monotonic() - started) * 1000)"
+      },
+      {
+        "file_path": "linkwatch/checker.py",
+        "line_number": 38,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "exceptions"
+        ],
+        "code_line": "    except requests.exceptions.Timeout:",
+        "context_snippet": "     35 |     except requests.exceptions.ConnectionError:\n     36 |         result[\"reason\"] = \"connection error\"\n     37 |         return result\n->   38 |     except requests.exceptions.Timeout:\n     39 |         result[\"reason\"] = \"timed out\"\n     40 |         return result\n     41 |     result[\"elapsed_ms\"] = int((time.monotonic() - started) * 1000)"
+      },
+      {
+        "file_path": "linkwatch/encoding.py",
+        "line_number": 5,
+        "usage_type": "import",
+        "import_statement": "from requests.utils import _parse_content_type_header",
+        "api_names": [
+          "_parse_content_type_header"
+        ],
+        "code_line": "from requests.utils import _parse_content_type_header",
+        "context_snippet": "      2 | import re\n      3 | \n      4 | import chardet\n->    5 | from requests.utils import _parse_content_type_header\n      6 | \n      7 | TITLE_RE = re.compile(r\"<title[^>]*>(.*?)</title>\", re.IGNORECASE | re.DOTALL)\n      8 | "
+      },
+      {
+        "file_path": "linkwatch/encoding.py",
+        "line_number": 11,
+        "usage_type": "call",
+        "import_statement": "from requests.utils import _parse_content_type_header",
+        "api_names": [
+          "_parse_content_type_header"
+        ],
+        "code_line": "    _, params = _parse_content_type_header(resp.headers.get(\"Content-Type\", \"\"))",
+        "context_snippet": "      8 | \n      9 | \n     10 | def detect_encoding(resp):\n->   11 |     _, params = _parse_content_type_header(resp.headers.get(\"Content-Type\", \"\"))\n     12 |     charset = params.get(\"charset\")\n     13 |     if charset and charset is not True:\n     14 |         return charset"
+      },
+      {
+        "file_path": "linkwatch/http_patch.py",
+        "line_number": 1,
+        "usage_type": "import",
+        "import_statement": "import requests",
+        "api_names": [
+          "requests"
+        ],
+        "code_line": "import requests",
+        "context_snippet": "->    1 | import requests\n      2 | \n      3 | USER_AGENT = \"linkwatch/1.0\"\n      4 | "
+      },
+      {
+        "file_path": "linkwatch/http_patch.py",
+        "line_number": 5,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "request"
+        ],
+        "code_line": "_original_request = requests.Session.request",
+        "context_snippet": "      2 | \n      3 | USER_AGENT = \"linkwatch/1.0\"\n      4 | \n->    5 | _original_request = requests.Session.request\n      6 | \n      7 | \n      8 | def _request(self, method, url, **kwargs):"
+      },
+      {
+        "file_path": "linkwatch/http_patch.py",
+        "line_number": 5,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "Session"
+        ],
+        "code_line": "_original_request = requests.Session.request",
+        "context_snippet": "      2 | \n      3 | USER_AGENT = \"linkwatch/1.0\"\n      4 | \n->    5 | _original_request = requests.Session.request\n      6 | \n      7 | \n      8 | def _request(self, method, url, **kwargs):"
+      },
+      {
+        "file_path": "linkwatch/http_patch.py",
+        "line_number": 14,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "request"
+        ],
+        "code_line": "requests.Session.request = _request",
+        "context_snippet": "     11 |     return _original_request(self, method, url, headers=headers, **kwargs)\n     12 | \n     13 | \n->   14 | requests.Session.request = _request"
+      },
+      {
+        "file_path": "linkwatch/http_patch.py",
+        "line_number": 14,
+        "usage_type": "attribute_call",
+        "import_statement": "import requests",
+        "api_names": [
+          "Session"
+        ],
+        "code_line": "requests.Session.request = _request",
+        "context_snippet": "     11 |     return _original_request(self, method, url, headers=headers, **kwargs)\n     12 | \n     13 | \n->   14 | requests.Session.request = _request"
+      }
+    ],
+    "rich": [
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 2,
+        "usage_type": "import",
+        "import_statement": "from rich.console import Console",
+        "api_names": [
+          "Console"
+        ],
+        "code_line": "from rich.console import Console",
+        "context_snippet": "      1 | import click\n->    2 | from rich.console import Console\n      3 | from rich.live import Live\n      4 | from rich.table import Table\n      5 | "
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 3,
+        "usage_type": "import",
+        "import_statement": "from rich.live import Live",
+        "api_names": [
+          "Live"
+        ],
+        "code_line": "from rich.live import Live",
+        "context_snippet": "      1 | import click\n      2 | from rich.console import Console\n->    3 | from rich.live import Live\n      4 | from rich.table import Table\n      5 | \n      6 | from . import __version__, cache, checker, config, resources"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 4,
+        "usage_type": "import",
+        "import_statement": "from rich.table import Table",
+        "api_names": [
+          "Table"
+        ],
+        "code_line": "from rich.table import Table",
+        "context_snippet": "      1 | import click\n      2 | from rich.console import Console\n      3 | from rich.live import Live\n->    4 | from rich.table import Table\n      5 | \n      6 | from . import __version__, cache, checker, config, resources\n      7 | from . import http_patch  # noqa: F401"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 9,
+        "usage_type": "call",
+        "import_statement": "from rich.console import Console",
+        "api_names": [
+          "Console"
+        ],
+        "code_line": "console = Console()",
+        "context_snippet": "      6 | from . import __version__, cache, checker, config, resources\n      7 | from . import http_patch  # noqa: F401\n      8 | \n->    9 | console = Console()\n     10 | \n     11 | \n     12 | def build_table(title, results):"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 13,
+        "usage_type": "call",
+        "import_statement": "from rich.table import Table",
+        "api_names": [
+          "Table"
+        ],
+        "code_line": "    table = Table(title=title)",
+        "context_snippet": "     10 | \n     11 | \n     12 | def build_table(title, results):\n->   13 |     table = Table(title=title)\n     14 |     table.add_column(\"Site\", style=\"bold\")\n     15 |     table.add_column(\"Status\")\n     16 |     table.add_column(\"Code\", justify=\"right\")"
+      },
+      {
+        "file_path": "linkwatch/cli.py",
+        "line_number": 40,
+        "usage_type": "call",
+        "import_statement": "from rich.live import Live",
+        "api_names": [
+          "Live"
+        ],
+        "code_line": "    with Live(build_table(settings.title, results), console=console,",
+        "context_snippet": "     37 |     \"\"\"Check all sites and save the results.\"\"\"\n     38 |     settings = config.load_settings(config_path)\n     39 |     results = []\n->   40 |     with Live(build_table(settings.title, results), console=console,\n     41 |               refresh_per_second=4) as live:\n     42 |         for result in checker.check_all(settings.sites):\n     43 |             results.append(result)"
+      }
+    ],
+    "setuptools": [
+      {
+        "file_path": "linkwatch/resources.py",
+        "line_number": 1,
+        "usage_type": "import",
+        "import_statement": "import pkg_resources",
+        "api_names": [
+          "pkg_resources"
+        ],
+        "code_line": "import pkg_resources",
+        "context_snippet": "->    1 | import pkg_resources\n      2 | \n      3 | TEMPLATE_NAME = \"status.html.j2\"\n      4 | "
+      },
+      {
+        "file_path": "linkwatch/resources.py",
+        "line_number": 7,
+        "usage_type": "attribute_call",
+        "import_statement": "import pkg_resources",
+        "api_names": [
+          "resource_filename"
+        ],
+        "code_line": "    return pkg_resources.resource_filename(\"linkwatch\", \"templates\")",
+        "context_snippet": "      4 | \n      5 | \n      6 | def template_dir():\n->    7 |     return pkg_resources.resource_filename(\"linkwatch\", \"templates\")"
+      }
+    ],
+    "six": [],
+    "toml": [
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 3,
+        "usage_type": "import",
+        "import_statement": "import toml",
+        "api_names": [
+          "toml"
+        ],
+        "code_line": "import toml",
+        "context_snippet": "      1 | from typing import List\n      2 | \n->    3 | import toml\n      4 | from pydantic import BaseModel, validator\n      5 | \n      6 | "
+      },
+      {
+        "file_path": "linkwatch/config.py",
+        "line_number": 37,
+        "usage_type": "attribute_call",
+        "import_statement": "import toml",
+        "api_names": [
+          "load"
+        ],
+        "code_line": "    data = toml.load(path)",
+        "context_snippet": "     34 | \n     35 | \n     36 | def load_settings(path=\"sites.toml\"):\n->   37 |     data = toml.load(path)\n     38 |     return Settings(**data)"
+      }
+    ]
+  },
+  "raw_proposals": [
+    {
+      "dependency": "appdirs",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review appdirs deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering appdirs"
+      ]
+    },
+    {
+      "dependency": "chardet",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review chardet deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering chardet"
+      ]
+    },
+    {
+      "dependency": "click",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review click deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering click"
+      ]
+    },
+    {
+      "dependency": "idna",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review idna deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering idna"
+      ]
+    },
+    {
+      "dependency": "jinja2",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review jinja2 deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering jinja2"
+      ]
+    },
+    {
+      "dependency": "nose",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review nose deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering nose"
+      ]
+    },
+    {
+      "dependency": "pydantic",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review pydantic deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering pydantic"
+      ]
+    },
+    {
+      "dependency": "pytest",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review pytest deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering pytest"
+      ]
+    },
+    {
+      "dependency": "python-dateutil",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review python-dateutil deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering python-dateutil"
+      ]
+    },
+    {
+      "dependency": "requests",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review requests deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering requests"
+      ]
+    },
+    {
+      "dependency": "rich",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review rich deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering rich"
+      ]
+    },
+    {
+      "dependency": "setuptools",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review setuptools deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering setuptools"
+      ]
+    },
+    {
+      "dependency": "six",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review six deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering six"
+      ]
+    },
+    {
+      "dependency": "toml",
+      "source": "AI-PROPOSED",
+      "action": "manual_review",
+      "replacement_package": null,
+      "replacement_version": null,
+      "reasoning": "Automated proposal failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\")). Requires manual inspection.",
+      "migration_steps": [
+        "Review toml deprecation notices and compatibility with Python 3.12",
+        "Manually inspect usages in codebase",
+        "Select and test a modern alternative",
+        "Update requirements.txt and verify test suite"
+      ],
+      "code_edits": [],
+      "requirements_edits": {
+        "remove": [],
+        "add": []
+      },
+      "expected_gaps": [
+        "Automatic AST transformation could not be completed by LLM"
+      ],
+      "suggested_tests": [
+        "Run integration test suite covering toml"
+      ]
+    }
+  ]
+}
